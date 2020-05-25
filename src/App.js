@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Hero from './components/hero/Hero';
+import GlobalStyles from "./theme/GlobalStyles";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     Hannah Farrow
-    </div>
+    <Fragment>
+      <GlobalStyles />
+      <Hero />
+    </Fragment>
   );
 }
 
