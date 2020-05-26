@@ -1,6 +1,8 @@
 import React from "react";
-import { Header, List, ListEl, StyledLink } from "./NavBarStyles";
+import { Link } from "react-router-dom";
 import colors from "../../theme/Colors";
+import { Header, List, ListEl, StyledLink } from "./NavBarStyles";
+import Signature from './Signature';
 
 const activeStyles = {
     color: `${colors.coffeeCupBlue}`
@@ -8,7 +10,10 @@ const activeStyles = {
 
 const NavBar = () => (
   <Header>
-    <div>Signature</div>
+    <Link exact to='/' style={{ textDecoration: "none" }}>
+      <Signature />
+    </Link>
+
     <nav>
       <List>
         <ListEl>

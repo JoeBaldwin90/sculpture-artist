@@ -1,9 +1,13 @@
-import React from "react";
-import Hero from '../hero/Hero';
+import React, { Fragment } from "react";
+import Hero from "../hero/Hero";
+import Footer from "../footer/Footer";
 
 const Homepage = () => {
   return (
-    <Hero/>
+    <Fragment>
+      <Hero />
+      <Footer />
+    </Fragment>
   );
 };
 
