@@ -4,10 +4,10 @@ import colors from "../../theme/Colors";
 import { NavLink } from "react-router-dom";
 
 export const Header = styled.header`
-  opacity: ${(props) => (props.visible ? 1 : 0)};
   position: fixed;
   width: 100vw;
-  background: transparent;
+  background-color: #f5f5f4;
+  background: linear-gradient(60deg, #f5f5f480 0%, #f5f5f4 100%);
   z-index: 5;
   padding: 1em 2em;
   display: flex;
@@ -25,7 +25,7 @@ export const ListEl = styled.li`
 
 export const StyledLink = styled(NavLink)`
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.1em;
   color: ${colors.wetTerracotta};
   font-family: ${fonts.body};
   text-transform: uppercase;

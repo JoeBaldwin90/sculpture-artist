@@ -10,7 +10,7 @@ import {
 const Logo = () => {
   const scroll = () =>
     window.scrollTo({
-      top: window.innerHeight + (0.1 * window.innerHeight),
+      top: window.innerHeight + (0.05 * window.innerHeight),
       behavior: "smooth",
     });
 

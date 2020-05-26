@@ -5,13 +5,13 @@ import colors from "../../theme/Colors";
 
 const Name = styled.h2`
   font-family: ${fonts.signature};
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: ${colors.wetTerracotta};
 `;
 
 const Occupation = styled.h1`
   font-family: ${fonts.title};
-  font-size: 1.75em;
+  font-size: 1.2em;
   text-transform: uppercase;
   color: ${colors.wetTerracotta};
 `;
