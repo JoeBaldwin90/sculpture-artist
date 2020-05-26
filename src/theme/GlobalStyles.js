@@ -5,6 +5,10 @@ import fonts from "./Fonts";
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
+
+  * {
+    box-sizing: border-box;
+  }
   
   body {
     font-size: 16px;
