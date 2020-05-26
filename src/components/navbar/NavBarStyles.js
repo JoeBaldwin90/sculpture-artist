@@ -4,6 +4,7 @@ import colors from "../../theme/Colors";
 import { NavLink } from "react-router-dom";
 
 export const Header = styled.header`
+  opacity: ${(props) => (props.visible ? 1 : 0)};
   position: fixed;
   width: 100vw;
   background: transparent;
