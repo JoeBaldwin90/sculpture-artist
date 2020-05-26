@@ -7,7 +7,11 @@ export const Header = styled.header`
   position: fixed;
   width: 100vw;
   background-color: #f5f5f4;
-  background: linear-gradient(60deg, #f5f5f480 0%, #f5f5f4 100%);
+  background: radial-gradient(
+    circle,
+    rgba(245, 245, 244, 0.65) 15%,
+    rgba(245, 245, 244, 1) 85%
+  );
   z-index: 5;
   padding: 1em 2em;
   display: flex;
