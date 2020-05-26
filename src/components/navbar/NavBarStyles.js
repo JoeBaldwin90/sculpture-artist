@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import fonts from "../../theme/Fonts";
 import colors from "../../theme/Colors";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = styled.header`
   position: fixed;
@@ -22,7 +22,7 @@ export const ListEl = styled.li`
   padding-left: 1em;
 `;
 
-export const NavLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   text-decoration: none;
   font-size: 1.25em;
   color: ${colors.wetTerracotta};

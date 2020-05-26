@@ -1,5 +1,10 @@
 import React from "react";
-import { Header, List, ListEl, NavLink } from "./NavBarStyles";
+import { Header, List, ListEl, StyledLink } from "./NavBarStyles";
+import colors from "../../theme/Colors";
+
+const activeStyles = {
+    color: `${colors.coffeeCupBlue}`
+}
 
 const NavBar = () => (
   <Header>
@@ -7,13 +12,19 @@ const NavBar = () => (
     <nav>
       <List>
         <ListEl>
-          <NavLink to='/'>Home</NavLink>
+          <StyledLink exact to='/' activeStyle={activeStyles}>
+            Home
+          </StyledLink>
         </ListEl>
         <ListEl>
-          <NavLink to='/work'>Work</NavLink>
+          <StyledLink exact to='/work' activeStyle={activeStyles}>
+            Work
+          </StyledLink>
         </ListEl>
         <ListEl>
-          <NavLink to='/contact'>Contact</NavLink>
+          <StyledLink exact to='/contact' activeStyle={activeStyles}>
+            Contact
+          </StyledLink>
         </ListEl>
       </List>
     </nav>
