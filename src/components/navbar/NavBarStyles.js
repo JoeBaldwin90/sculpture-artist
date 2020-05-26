@@ -9,9 +9,6 @@ export const Header = styled.header`
   background: transparent;
   z-index: 5;
   padding: 1em 2em;
-`;
-
-export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,13 +16,16 @@ export const Nav = styled.nav`
 
 export const List = styled.ul`
   display: flex;
-  justify-content: flex-end;
+`;
+
+export const ListEl = styled.li`
+  padding-left: 1em;
 `;
 
 export const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 1.25em;
-  color: ${colors.sunbeamGrey};
+  color: ${colors.wetTerracotta};
   font-family: ${fonts.body};
   text-transform: uppercase;
   transition: all 0.5s ease;

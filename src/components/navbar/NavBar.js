@@ -1,21 +1,22 @@
 import React from "react";
-import { Header, Nav, List, NavLink } from "./NavBarStyles";
+import { Header, List, ListEl, NavLink } from "./NavBarStyles";
 
 const NavBar = () => (
   <Header>
-    <Nav>
+    <div>Signature</div>
+    <nav>
       <List>
-        <li>
+        <ListEl>
           <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
+        </ListEl>
+        <ListEl>
           <NavLink to='/work'>Work</NavLink>
-        </li>
-        <li>
+        </ListEl>
+        <ListEl>
           <NavLink to='/contact'>Contact</NavLink>
-        </li>
+        </ListEl>
       </List>
-    </Nav>
+    </nav>
   </Header>
 );
 
