@@ -24,8 +24,8 @@ export const ColourCover = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: ${colors.wetTerracotta};
-  opacity: 0.2;
+  background: ${colors.organicGreen};
+  opacity: 0.15;
   z-index: 1;
 `;
 
