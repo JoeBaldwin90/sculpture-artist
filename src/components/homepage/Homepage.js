@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import NavBar from '../navbar/NavBar';
 import Hero from "../hero/Hero";
 import Footer from "../footer/Footer";
 import {

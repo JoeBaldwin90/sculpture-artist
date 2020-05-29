@@ -5,15 +5,15 @@ import { NavLink } from "react-router-dom";
 
 export const Header = styled.header`
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background-color: #f5f5f4;
   background: radial-gradient(
     circle,
-    rgba(245, 245, 244, 0.65) 15%,
+    rgba(245, 245, 244, 0.35) 15%,
     rgba(245, 245, 244, 1) 85%
   );
   z-index: 5;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;

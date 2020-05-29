@@ -32,7 +32,7 @@ export const ColourCover = styled.div`
 export const FadeCover = styled.div`
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 120px;
   bottom: 0;
   background: #fff;
   background: linear-gradient(#362d1d00, #f5f5f4);

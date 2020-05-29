@@ -20,7 +20,7 @@ export const WIPImage = styled.img.attrs({
 
 export const MainGrid = styled.main`
   max-width: 1080px;
-  padding: 6em 1em 0em 1em;
+  padding: 5em 1em 0em 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 2em;
