@@ -1,9 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import fonts from "../../theme/Fonts";
 import colors from "../../theme/Colors";
 import { NavLink } from "react-router-dom";
 
+const slideIn = keyframes`
+  from { transform: translateY(-100%) }
+  to { transform: translateY(0) }
+`;
+
 export const Header = styled.header`
+  transform: translateY(-100%);
   position: fixed;
   width: 100%;
   background-color: #f5f5f4;
@@ -17,6 +23,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: 0.5s ${slideIn} 5s ease-out forwards 1;;
 `;
 
 export const List = styled.ul`
