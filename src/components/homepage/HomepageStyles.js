@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import colors from "../../theme/Colors";
 
 export const Image = styled.img.attrs((props) => ({
   src: props.src,
