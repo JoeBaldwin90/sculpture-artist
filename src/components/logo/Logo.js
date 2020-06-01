@@ -8,13 +8,14 @@ import {
 } from "./LogoStyles";
 
 const Logo = () => {
-  const scroll = () =>
+  const scroll = () => {
     window.scrollTo({
       top: window.innerHeight + (0.05 * window.innerHeight),
       behavior: "smooth",
     });
+  }
 
-  return (
+ return (
     <LogoContainer>
       <Signature>Hannah Farrow</Signature>
       <Title>Sculpture</Title>
@@ -23,4 +24,5 @@ const Logo = () => {
     </LogoContainer>
   );
 };
+
 export default Logo;

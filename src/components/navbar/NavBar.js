@@ -9,7 +9,6 @@ const activeStyles = {
 };
 
 const NavBar = () => {
-  const headerLinks = ["work", "contact"]
   return (
     <Header>
       <NavLink exact to='/' style={{ textDecoration: "none" }}>
@@ -17,9 +16,13 @@ const NavBar = () => {
       </NavLink>
       <nav>
         <List>
-          {headerLinks.map((link, i) => (
+          {["work", "contact"].map((link, i) => (
             <ListEl key={i}>
-              <StyledLink exact to={`/${link}`} activeStyle={activeStyles}>
+              <StyledLink
+                exact
+                to={`/${link}`}
+                activeStyle={activeStyles}
+              >
                 {link}
               </StyledLink>
             </ListEl>
