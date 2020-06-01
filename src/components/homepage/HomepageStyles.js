@@ -1,21 +1,14 @@
 import styled from "styled-components";
 // import colors from "../../theme/Colors";
-import hannah from "../../images/hannah.png";
-import wip from "../../images/head.png";
 
-export const HannahImage = styled.img.attrs({
-  src: hannah,
-  alt: "Hannah Farrow sculpture artist in action",
-})`
-  width: 100%;
+export const Image = styled.img.attrs((props) => ({
+  src: props.src,
+  alt: props.alt,
+}))`
+  width: ${(props) => props.width};
   margin-bottom: 3em;
-`;
-
-export const WIPImage = styled.img.attrs({
-  src: wip,
-  alt: "Hannah Farrow sculpture artist in action",
-})`
-  width: 50%;
+  opacity: ${(props) => (props.inView ? 1 : 0)};
+  transition: opacity 1s ease;
 `;
 
 export const MainGrid = styled.main`
