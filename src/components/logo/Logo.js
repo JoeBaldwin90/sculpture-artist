@@ -8,11 +8,12 @@ import {
 } from "./LogoStyles";
 
 const Logo = () => {
-  const scroll = () =>
+  const scroll = () => {
     window.scrollTo({
       top: window.innerHeight + (0.05 * window.innerHeight),
       behavior: "smooth",
     });
+  }
 
   return (
     <LogoContainer>
@@ -23,4 +24,5 @@ const Logo = () => {
     </LogoContainer>
   );
 };
+
 export default Logo;
