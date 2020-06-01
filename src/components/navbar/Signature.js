@@ -7,6 +7,7 @@ const Name = styled.h2`
   font-family: ${fonts.signature};
   font-size: 1.2em;
   color: ${colors.wetTerracotta};
+  transition: all 0.5s ease;
 `;
 
 const Occupation = styled.h1`
@@ -14,10 +15,17 @@ const Occupation = styled.h1`
   font-size: 1.2em;
   text-transform: uppercase;
   color: ${colors.wetTerracotta};
+  transition: all 0.5s ease;
 `;
 
 const SignatureContainer = styled.div`
   text-align: center;
+  &:hover {
+    h1,
+    h2 {
+      color: ${colors.coffeeCupBlue};
+    }
+  }
 `;
 
 const Signature = () => (
