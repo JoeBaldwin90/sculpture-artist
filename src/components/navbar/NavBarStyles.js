@@ -23,7 +23,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation: 0.5s ${slideIn} 5s ease-out forwards 1;;
+  animation: 0.5s ${slideIn} 0.5s ease-out forwards 1;;
 `;
 
 export const List = styled.ul`
