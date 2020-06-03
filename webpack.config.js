@@ -6,10 +6,10 @@ module.exports = {
   mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js"),
-    hannah: path.resolve(__dirname, "src/images/hannah.png"),
-    head: path.resolve(__dirname, "src/images/head.png"),
-    clay: path.resolve(__dirname, "src/images/clay.jpg"),
-    arrow: path.resolve(__dirname, "src/images/arrow.svg"),
+    // hannah: path.resolve(__dirname, "src/images/hannah.png"),
+    // head: path.resolve(__dirname, "src/images/head.png"),
+    // clay: path.resolve(__dirname, "src/images/clay.jpg"),
+    // arrow: path.resolve(__dirname, "src/images/arrow.svg"),
   },
   performance: {
     hints: process.env.NODE_ENV === "production" ? "warning" : false,
@@ -64,13 +64,10 @@ module.exports = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name(module) {
-            // get the name. E.g. node_modules/packageName/not/this/part.js
-            // or node_modules/packageName
             const packageName = module.context.match(
               /[\\/]node_modules[\\/](.*?)([\\/]|$)/
             )[1];
 
-            // npm package names are URL-safe, but some servers don't like @ symbols
             return `npm.${packageName.replace("@", "")}`;
           },
         },
