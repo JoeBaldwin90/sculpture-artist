@@ -19,12 +19,12 @@ const Work = () => {
             <div style={{ width: "40%" }}>
               <Image
                 src={kneedetail}
-                style={{ height: "100%", paddingRight: "1em" }}
+                style={{ height: "100%", paddingRight: ".5em" }}
               />
             </div>
             <div style={{ width: "60%" }}>
               <Image src={forearm} style={{ height: "50%" }} />
-              <Image src={chest} style={{ height: "50%", paddingTop: "1em" }} />
+              <Image src={chest} style={{ height: "50%", paddingTop: ".5em" }} />
             </div>
           </FlexBox>
         </ProjectBlock>
@@ -34,7 +34,7 @@ const Work = () => {
             <Image src={jacksonSide} style={{ width: "50%" }} />
             <Image
               src={jacksonBack}
-              style={{ width: "50%", paddingLeft: "1em" }}
+              style={{ width: "50%", paddingLeft: ".5em" }}
             />
           </FlexBox>
         </ProjectBlock>
@@ -44,7 +44,7 @@ const Work = () => {
             <Image src={claudiaBack} style={{ width: "60%" }} />
             <Image
               src={claudiaFront}
-              style={{ width: "40%", paddingLeft: "1em" }}
+              style={{ width: "40%", paddingLeft: ".5em" }}
             />
           </FlexBox>
         </ProjectBlock>

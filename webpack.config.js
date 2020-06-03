@@ -6,10 +6,10 @@ module.exports = {
   mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js"),
-    // hannah: path.resolve(__dirname, "src/images/hannah.png"),
-    // head: path.resolve(__dirname, "src/images/head.png"),
-    // clay: path.resolve(__dirname, "src/images/clay.jpg"),
-    // arrow: path.resolve(__dirname, "src/images/arrow.svg"),
+    hannah: path.resolve(__dirname, "src/images/hannah.png"),
+    head: path.resolve(__dirname, "src/images/head.png"),
+    clay: path.resolve(__dirname, "src/images/clay.jpg"),
+    arrow: path.resolve(__dirname, "src/images/arrow.svg"),
   },
   performance: {
     hints: process.env.NODE_ENV === "production" ? "warning" : false,

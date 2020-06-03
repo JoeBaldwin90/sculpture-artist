@@ -4,7 +4,7 @@ export const GalleryContainer = styled.section`
   padding: 62px 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1em;
+  grid-gap: .5em;
 `;
 
 export const Image = styled.img`
@@ -15,6 +15,10 @@ export const Image = styled.img`
 
 export const ProjectBlock = styled.div`
   grid-column: 2 / span 10;
+  
+  @media (max-width: 425px) {
+    grid-column: span 12;
+  }
 `;
 
 export const FlexBox = styled.div`
