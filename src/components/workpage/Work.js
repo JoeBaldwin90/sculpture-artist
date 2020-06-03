@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import styled from "styled-components";
 import Footer from "../footer/Footer";
+import { GalleryContainer, Image, ProjectBlock, FlexBox } from "./WorkStyles";
 
 import chest from "../../images/chest.png";
 import forearm from "../../images/forearm.png";
@@ -9,27 +9,6 @@ import jacksonSide from "../../images/JacksonFront.png";
 import jacksonBack from "../../images/JacksonSide.png";
 import claudiaBack from "../../images/ClaudiaBack.png";
 import claudiaFront from "../../images/ClaudiaFront.png";
-
-const GalleryContainer = styled.section`
-  padding: 62px 1em;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1em;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-`;
-
-const ProjectBlock = styled.div`
-  grid-column: 2 / span 10;
-`;
-
-const FlexBox = styled.div`
-  display: flex;
-`;
 
 const Work = () => {
   return (
@@ -59,7 +38,7 @@ const Work = () => {
             />
           </FlexBox>
         </ProjectBlock>
-        
+
         <ProjectBlock>
           <FlexBox>
             <Image src={claudiaBack} style={{ width: "60%" }} />
@@ -69,7 +48,6 @@ const Work = () => {
             />
           </FlexBox>
         </ProjectBlock>
-
       </GalleryContainer>
       <Footer />
     </Fragment>
