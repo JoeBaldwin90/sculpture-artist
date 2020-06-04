@@ -10,6 +10,11 @@ module.exports = {
     head: path.resolve(__dirname, "src/images/head.png"),
     clay: path.resolve(__dirname, "src/images/clay.jpg"),
     arrow: path.resolve(__dirname, "src/images/arrow.svg"),
+    chest: path.resolve(__dirname, "src/images/chest.png"),
+  },
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
   performance: {
     hints: process.env.NODE_ENV === "production" ? "warning" : false,
@@ -47,12 +52,15 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./public/index.html",
       filename: "./index.html",
       favicon: "./public/statue.ico",
-    })
+    }),
   ],
   optimization: {
     runtimeChunk: "single",
