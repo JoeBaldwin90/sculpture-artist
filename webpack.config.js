@@ -10,10 +10,10 @@ module.exports = {
     head: path.resolve(__dirname, "src/images/head.png"),
     clay: path.resolve(__dirname, "src/images/clay.jpg"),
     arrow: path.resolve(__dirname, "src/images/arrow.svg"),
+    chest: path.resolve(__dirname, "src/images/chest.png"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    // filename: "index_bundle.js",
     publicPath: "/",
   },
   performance: {
