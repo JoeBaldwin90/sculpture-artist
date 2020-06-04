@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.section`
-  padding: 62px 1em;
+  padding: 1em 1em 5em 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: .5em;

@@ -1,22 +1,28 @@
 import React, { Fragment } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import colors from "../../theme/Colors";
 import Footer from "../footer/Footer";
-import Figures from './Figures';
+import Figures from "./Figures";
+import { WorkNav, WorkLinks, StyledLink } from './WorkStyles';
+
+const activeStyles = {
+  color: `${colors.coffeeCupBlue}`,
+};
 
 const Work = () => {
   return (
     <Fragment>
-      <nav style={{ paddingTop: "100px" }}>
-        <ul>
+      <WorkNav>
+        <WorkLinks>
           {["figurative", "portrait", "commercial"].map((link, i) => (
             <li key={i}>
-              <Link exact to={`/work/${link}`}>
+              <StyledLink exact to={`/work/${link}`} activeStyle={activeStyles}>
                 {link}
-              </Link>
+              </StyledLink>
             </li>
           ))}
-        </ul>
-      </nav>
+        </WorkLinks>
+      </WorkNav>
       <Switch>
         <Route exact path='/work/figurative' component={Figures} />
         {/* <Route exact path='/work/portrait' component={Portraits} />

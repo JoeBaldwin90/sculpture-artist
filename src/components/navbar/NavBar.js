@@ -16,14 +16,14 @@ const NavBar = () => {
       </NavLink>
       <nav>
         <List>
-          {["work", "contact"].map((link, i) => (
+          {[["work", "work/figurative"], ["contact", "contact"]].map((link, i) => (
             <ListEl key={i}>
               <StyledLink
                 exact
-                to={`/${link}`}
+                to={`/${link[1]}`}
                 activeStyle={activeStyles}
               >
-                {link}
+                {link[0]}
               </StyledLink>
             </ListEl>
           ))}
