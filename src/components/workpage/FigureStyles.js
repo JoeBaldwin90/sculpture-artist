@@ -5,6 +5,9 @@ export const GalleryContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.5em;
+  @media (max-width: 425px) {
+    grid-gap: 0em;
+  }
 `;
 
 export const Image = styled.img`
@@ -29,9 +32,7 @@ export const FlexBox = styled.div`
     div {
       width: 100% !important;
       img {
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        padding-bottom: 0.5em !important;
+        padding: 0 0 0.5em 0 !important;
         width: 100% !important;
       }
     }

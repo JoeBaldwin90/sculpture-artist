@@ -22,7 +22,10 @@ const Figures = () => {
           </div>
           <div style={{ width: "60%" }}>
             <Image src={forearm} style={{ height: "50%" }} />
-            <Image src={chest} style={{ height: "50%", paddingTop: ".5em" }} />
+            <Image
+              src={chest}
+              style={{ height: "49.5%", paddingTop: ".5em" }}
+            />
           </div>
         </FlexBox>
       </ProjectBlock>
@@ -30,10 +33,13 @@ const Figures = () => {
       <ProjectBlock>
         <FlexBox>
           <div>
-            <Image src={jacksonSide} style={{ width: "50%" }} />
+            <Image
+              src={jacksonSide}
+              style={{ width: "50%", height: "100%" }}
+            />
             <Image
               src={jacksonBack}
-              style={{ width: "50%", paddingLeft: ".5em" }}
+              style={{ width: "50%", height: "100%", paddingLeft: ".5em" }}
             />
           </div>
         </FlexBox>
