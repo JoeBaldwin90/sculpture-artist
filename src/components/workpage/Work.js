@@ -20,7 +20,7 @@ const Work = ({ location }) => {
       <Container>
         <WorkNav>
           <WorkLinks>
-            {["figurative", "portrait", "commercial"].map((link, i) => (
+            {["figurative", "private", "commercial"].map((link, i) => (
               <li key={i}>
                 <StyledLink
                   exact
@@ -41,7 +41,7 @@ const Work = ({ location }) => {
           >
             <Switch>
               <Route exact path='/work/figurative' component={Figures} />
-              <Route exact path='/work/portrait' component={Portraits} />
+              <Route exact path='/work/private' component={Portraits} />
               <Route exact path='/work/commercial' component={Commercial} />
             </Switch>
           </CSSTransition>

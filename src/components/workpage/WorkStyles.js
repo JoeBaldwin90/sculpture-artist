@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const WorkNav = styled.nav`
-  padding: 8vh 1em 0 1em;
+  padding: 5em 1em 0 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.5em;
@@ -19,6 +19,14 @@ export const WorkLinks = styled.ul`
   grid-column: 2 / span 10;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 425px) {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    li {
+      margin-bottom: 1em;
+    }
+  }
 `;
 
 export const StyledLink = styled(NavLink)`

@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Image = styled.img.attrs((props) => ({
-         src: props.src,
-         alt: props.alt,
-       }))`
+  src: props.src,
+  alt: props.alt,
+}))`
   width: ${(props) => props.width};
   margin-bottom: 3em;
   opacity: ${(props) => (props.inView ? 1 : 0)};
   transition: opacity 1s ease;
-   @media (max-width: 425px) {
+  @media (max-width: 425px) {
     margin-bottom: 2em;
-   }
+  }
 `;
 
 export const MainGrid = styled.main`
