@@ -10,6 +10,9 @@ export const Title = styled.h1`
   text-transform: uppercase;
   color: ${colors.sunbeamGrey};
   text-shadow: 1px 1px 5px ${colors.organicGreen};
+  @media (max-width: 425px) {
+    font-size: 2.5em;
+  }
 `;
 
 export const Signature = styled.h2`
@@ -17,6 +20,9 @@ export const Signature = styled.h2`
   font-size: 5em;
   color: ${colors.sunbeamGrey};
   text-shadow: 1px 1px 5px ${colors.organicGreen};
+  @media (max-width: 425px) {
+    font-size: 2.5em;
+  }
 `;
 
 export const Subtitle = styled.h3`
@@ -26,6 +32,10 @@ export const Subtitle = styled.h3`
   font-size: 1.5em;
   color: ${colors.sunbeamGrey};
   text-shadow: 1px 1px 5px ${colors.organicGreen};
+  @media (max-width: 425px) {
+    font-size: 1em;
+    letter-spacing: 4px;
+  }
 `;
 
 export const LogoContainer = styled.div`
