@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import fonts from "../../theme/Fonts";
 import colors from "../../theme/Colors";
@@ -6,6 +7,9 @@ export const FooterContainer = styled.footer`
   width: 100%;
   padding: 10em 2em;
   background: ${colors.pastelBlue};
+  @media (max-width: 425px) {
+    padding: 3em 1em;
+  }
 `;
 
 export const FooterLinks = styled.div`
@@ -16,6 +20,10 @@ export const FooterLinks = styled.div`
 
   div {
     text-align: center;
+    margin-bottom: 1.5em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   h5 {
@@ -23,11 +31,44 @@ export const FooterLinks = styled.div`
     font-size: 2em;
     color: ${colors.sunbeamGrey};
     margin-bottom: 1.5em;
+    
+    @media (max-width: 425px) {
+      margin-bottom: .25em;
+    }
   }
 
-  p {
-    cursor: pointer;
+  p,
+  li {
     color: ${colors.sunbeamGrey};
     margin-bottom: 0.5em;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
+`;
+
+export const RouteLink = styled(Link)`
+  text-decoration: none;
+  color: ${colors.sunbeamGrey};
+  font-family: ${fonts.body};
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: ${colors.coffeeCupBlue};
+  }
+`;
+
+export const ExternalLink = styled.a`
+  text-decoration: none;
+  color: ${colors.sunbeamGrey};
+  font-family: ${fonts.body};
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: ${colors.coffeeCupBlue};
   }
 `;

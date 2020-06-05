@@ -8,7 +8,7 @@ import Footer from "../footer/Footer";
 import Figures from "./Figures";
 import Portraits from "./Portraits";
 import Commercial from "./Commercial";
-import { WorkNav, WorkLinks, StyledLink } from "./WorkStyles";
+import { WorkNav, WorkLinks, StyledLink, Container } from "./WorkStyles";
 
 const activeStyles = {
   color: `${colors.coffeeCupBlue}`,
@@ -17,31 +17,37 @@ const activeStyles = {
 const Work = ({ location }) => {
   return (
     <Fragment>
-      <WorkNav>
-        <WorkLinks>
-          {["figurative", "portrait", "commercial"].map((link, i) => (
-            <li key={i}>
-              <StyledLink exact to={`/work/${link}`} activeStyle={activeStyles}>
-                {link}
-              </StyledLink>
-            </li>
-          ))}
-        </WorkLinks>
-      </WorkNav>
-      <TransitionGroup className='transition-group'>
-        <CSSTransition
-          key={location.key}
-          timeout={{ enter: 300, exit: 100 }}
-          classNames='fade'
-        >
-          <Switch>
-            <Route exact path='/work/figurative' component={Figures} />
-            <Route exact path='/work/portrait' component={Portraits} />
-            <Route exact path='/work/commercial' component={Commercial} />
-          </Switch>
-        </CSSTransition>
-      </TransitionGroup>
-      <Footer />;
+      <Container>
+        <WorkNav>
+          <WorkLinks>
+            {["figurative", "private", "commercial"].map((link, i) => (
+              <li key={i}>
+                <StyledLink
+                  exact
+                  to={`/work/${link}`}
+                  activeStyle={activeStyles}
+                >
+                  {link}
+                </StyledLink>
+              </li>
+            ))}
+          </WorkLinks>
+        </WorkNav>
+        <TransitionGroup className='transition-group'>
+          <CSSTransition
+            key={location.key}
+            timeout={{ enter: 300, exit: 100 }}
+            classNames='fade'
+          >
+            <Switch>
+              <Route exact path='/work/figurative' component={Figures} />
+              <Route exact path='/work/private' component={Portraits} />
+              <Route exact path='/work/commercial' component={Commercial} />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      </Container>
+      <Footer />
     </Fragment>
   );
 };

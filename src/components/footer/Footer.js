@@ -1,5 +1,10 @@
 import React from "react";
-import { FooterContainer, FooterLinks } from "./FooterStyles";
+import {
+  FooterContainer,
+  FooterLinks,
+  RouteLink,
+  ExternalLink,
+} from "./FooterStyles";
 
 const Footer = () => {
   return (
@@ -7,24 +12,35 @@ const Footer = () => {
       <FooterLinks>
         <div>
           <h5>Social</h5>
-          <p>Instagram</p>
-          <p>LinkedIn</p>
+          <p>
+            <ExternalLink href='https://www.instagram.com/hannahfarrowstudio/'>
+              Instagram
+            </ExternalLink>
+          </p>
         </div>
         <div>
-          <h5>Press Releases</h5>
-          <p>The Telegraph</p>
-          <p>Blair on Ice</p>
-          <p>Frozen</p>
+          <h5>Press</h5>
+          <ul>
+            <li>
+              <ExternalLink href='https://www.standard.co.uk/showbiz/eddie-redmayne-waxwork-unveiled-at-londons-madame-tussauds-a3749386.html'>
+                Eddie Redmayne
+              </ExternalLink>
+            </li>
+            <li>
+              <ExternalLink href='https://www.bbc.co.uk/news/world-asia-india-35818832'>
+                Meeting Modi
+              </ExternalLink>
+            </li>
+          </ul>
         </div>
         <div>
           <h5>Contact</h5>
-          <p>12345678910</p>
-          <p>email@gmail.com</p>
-        </div>
-        <div>
-          <h5>Prices</h5>
-          <p>Please enquire</p>
-          <p>for bespoke prices</p>
+          <p>Please visit my</p>
+          <p>
+            <RouteLink exact to='/contact'>
+              contact page
+            </RouteLink>
+          </p>
         </div>
       </FooterLinks>
     </FooterContainer>

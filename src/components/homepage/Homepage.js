@@ -39,15 +39,17 @@ const Homepage = () => {
           <Image src={hannah} ref={imageRef} inView={inView} width={"100%"} />
           <div>
             <p>
-              One quick fox jumped over a lake. Try it. One quick fox jumped
-              over a lake. Try it. One quick fox jumped over a lake. Try it. One
-              quick fox jumped over a lake. Try it.
+              I commission bespoke figurative, bust or portrait sculptures from
+              my studio in London. It's my passion to craft a piece of art that
+              you will love for a lifetime. I'm able to finish sculptures in
+              concrete, bronze or plaster.
             </p>
             <p>
-              One quick fox jumped over a lake. Try it. One quick fox jumped
-              over a lake. Try it. One quick fox jumped over a lake. Try it. One
-              quick fox jumped over a lake. Try it. One quick fox jumped over a
-              lake. Try it. One quick fox jumped over a lake. Try it.
+              All of my work is tailored to your style and budget. If you'd like
+              me to commission a sculpture of someone you love, someone that
+              inspires you or simply add to your collection, I'd love to hear
+              from you. All quotes and initial consulatations are free of
+              charge.
             </p>
           </div>
         </ContentWide>
@@ -55,8 +57,11 @@ const Homepage = () => {
         <ContentTall>
           <Image src={wip} inView={true} />
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            I'm a classically trained sculptor with over seven years experience
+            working for Madame Tussauds, the world-famous waxwork franchise.
+            I've been lucky enough to meet and sculpt some of the highest
+            profile figures on the planet, but I embrace the intimacy and
+            creative freedom of working with private clients. 
           </p>
         </ContentTall>
       </MainGrid>
