@@ -6,9 +6,10 @@ export const FormContainer = styled.section`
   padding: 6em 2em 5em 2em;
   max-width: 720px;
   margin: 0 auto;
+  @media (max-width: 425px) {
+    padding: 5em 1em 5em 1em;
+  }
 `;
-
-export const Form = styled.form``;
 
 export const FormInput = styled.input`
   font-family: ${fonts.body};
@@ -22,6 +23,10 @@ export const FormInput = styled.input`
   padding: 1em;
   margin-top: 0.5em;
   margin-bottom: 2em;
+
+  @media (max-width: 425px) {
+    padding: 0.5em;
+  }
 `;
 
 export const FormText = styled.textarea`
@@ -36,7 +41,11 @@ export const FormText = styled.textarea`
   padding: 1em;
   margin-top: 0.5em;
   margin-bottom: 2em;
-  height: 25vh;
+  height: 40vh;
+
+  @media (max-width: 425px) {
+    padding: 0.5em;
+  }
 `;
 
 export const Label = styled.label`
@@ -53,4 +62,9 @@ export const SubmitButton = styled.button`
   padding: 0.5em;
   font-size: 1.1em;
   width: 100%;
+  border: none;
+  
+  &:active {
+    background: ${colors.shavantPink};
+  }
 `;

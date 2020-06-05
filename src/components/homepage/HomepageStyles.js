@@ -8,6 +8,7 @@ export const Image = styled.img.attrs((props) => ({
   margin-bottom: 3em;
   opacity: ${(props) => (props.inView ? 1 : 0)};
   transition: opacity 1s ease;
+  
   @media (max-width: 425px) {
     margin-bottom: 2em;
   }
@@ -18,7 +19,6 @@ export const MainGrid = styled.main`
   padding: 6em 1em 0em 1em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 2em;
   grid-auto-flow: dense;
   margin: 0 auto;
   margin-bottom: 5em;

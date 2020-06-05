@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Footer from "../footer/Footer";
 import {
-  Form,
   FormInput,
   FormText,
   Label,
@@ -13,7 +12,7 @@ const Contact = () => {
   return (
     <Fragment>
       <FormContainer>
-        <Form action='https://formspree.io/moqkejgp' method='POST'>
+        <form action='https://formspree.io/moqkejgp' method='POST'>
           <Label>
             Your full name:
             <FormInput type='text' name='name' />
@@ -26,8 +25,9 @@ const Contact = () => {
             Your message:
             <FormText name='message'></FormText>
           </Label>
+          <input type='text' name='_gotcha' style={{ display: "none" }} />
           <SubmitButton type='submit'>Send</SubmitButton>
-        </Form>
+        </form>
       </FormContainer>
       <Footer />
     </Fragment>

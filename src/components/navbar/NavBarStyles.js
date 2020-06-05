@@ -23,7 +23,16 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation: 0.5s ${slideIn} 0.5s ease-out forwards 1;;
+  animation: 0.5s ${slideIn} 0.5s ease-out forwards 1;
+
+  @media (max-width: 425px) {
+    padding: 0.8em 1em;
+    background: radial-gradient(
+      circle,
+      rgba(245, 245, 244, 0.75) 0%,
+      rgba(245, 245, 244, 1) 85%
+    );
+  }
 `;
 
 export const List = styled.ul`
@@ -45,5 +54,9 @@ export const StyledLink = styled(NavLink)`
 
   &:hover {
     color: ${colors.coffeeCupBlue};
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1em;
   }
 `;

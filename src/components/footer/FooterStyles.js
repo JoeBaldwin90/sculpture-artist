@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
   padding: 10em 2em;
   background: ${colors.pastelBlue};
   @media (max-width: 425px) {
-    padding: 3em 1em;
+    padding: 4em 1em;
   }
 `;
 
@@ -31,9 +31,10 @@ export const FooterLinks = styled.div`
     font-size: 2em;
     color: ${colors.sunbeamGrey};
     margin-bottom: 1.5em;
-    
+
     @media (max-width: 425px) {
-      margin-bottom: .25em;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
     }
   }
 
