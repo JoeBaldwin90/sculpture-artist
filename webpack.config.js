@@ -11,6 +11,14 @@ module.exports = {
     clay: path.resolve(__dirname, "src/images/clay.jpg"),
     arrow: path.resolve(__dirname, "src/images/arrow.svg"),
     chest: path.resolve(__dirname, "src/images/chest.png"),
+    ant: path.resolve(__dirname, "src/images/ant.png"),
+    claudia: path.resolve(__dirname, "src/images/claudia.png"),
+    cback: path.resolve(__dirname, "src/images/ClaudiaBack.png"),
+    cfront: path.resolve(__dirname, "src/images/ClaudiaFront.png"),
+    forearm: path.resolve(__dirname, "src/images/forearm.png"),
+    hardwell: path.resolve(__dirname, "src/images/hardwell.png"),
+    jfront: path.resolve(__dirname, "src/images/JacksonFront.png"),
+    jside: path.resolve(__dirname, "src/images/JacksonSide.png"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -33,6 +41,19 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
+          },
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+            },
           },
         ],
       },
