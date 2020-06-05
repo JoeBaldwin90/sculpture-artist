@@ -29,21 +29,25 @@ const Figures = () => {
 
       <ProjectBlock>
         <FlexBox>
-          <Image src={jacksonSide} style={{ width: "50%" }} />
-          <Image
-            src={jacksonBack}
-            style={{ width: "50%", paddingLeft: ".5em" }}
-          />
+          <div>
+            <Image src={jacksonSide} style={{ width: "50%" }} />
+            <Image
+              src={jacksonBack}
+              style={{ width: "50%", paddingLeft: ".5em" }}
+            />
+          </div>
         </FlexBox>
       </ProjectBlock>
 
       <ProjectBlock>
         <FlexBox>
-          <Image src={claudiaBack} style={{ width: "60%" }} />
-          <Image
-            src={claudiaFront}
-            style={{ width: "40%", paddingLeft: ".5em" }}
-          />
+          <div>
+            <Image src={claudiaBack} style={{ width: "60%" }} />
+            <Image
+              src={claudiaFront}
+              style={{ width: "40%", paddingLeft: ".5em" }}
+            />
+          </div>
         </FlexBox>
       </ProjectBlock>
     </GalleryContainer>
