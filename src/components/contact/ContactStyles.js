@@ -62,4 +62,9 @@ export const SubmitButton = styled.button`
   padding: 0.5em;
   font-size: 1.1em;
   width: 100%;
+  border: none;
+  
+  &:active {
+    background: ${colors.shavantPink};
+  }
 `;
