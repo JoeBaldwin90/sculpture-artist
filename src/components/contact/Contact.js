@@ -27,7 +27,6 @@ const Contact = () => {
           </Label>
           <input type='text' name='_gotcha' style={{ display: "none" }} />
           <SubmitButton type='submit'>Send</SubmitButton>
-          <input type='hidden' name='_next' value='http://localhost:8080/' />
         </form>
       </FormContainer>
       <Footer />
