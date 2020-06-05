@@ -3,6 +3,11 @@ import styled from "styled-components";
 import fonts from "../../theme/Fonts";
 import colors from "../../theme/Colors";
 
+export const Container = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+`;
+
 export const WorkNav = styled.nav`
   padding: 8vh 1em 0 1em;
   display: grid;
