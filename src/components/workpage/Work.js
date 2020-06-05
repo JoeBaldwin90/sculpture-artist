@@ -3,7 +3,9 @@ import { Switch, Route } from "react-router-dom";
 import colors from "../../theme/Colors";
 import Footer from "../footer/Footer";
 import Figures from "./Figures";
-import { WorkNav, WorkLinks, StyledLink } from './WorkStyles';
+import Portraits from "./Portraits";
+import Commercial from "./Commercial";
+import { WorkNav, WorkLinks, StyledLink } from "./WorkStyles";
 
 const activeStyles = {
   color: `${colors.coffeeCupBlue}`,
@@ -25,8 +27,8 @@ const Work = () => {
       </WorkNav>
       <Switch>
         <Route exact path='/work/figurative' component={Figures} />
-        {/* <Route exact path='/work/portrait' component={Portraits} />
-        <Route exact path='/work/commercial' component={Commercial} /> */}
+        <Route exact path='/work/portrait' component={Portraits} />
+        <Route exact path='/work/commercial' component={Commercial} />
       </Switch>
       <Footer />;
     </Fragment>
