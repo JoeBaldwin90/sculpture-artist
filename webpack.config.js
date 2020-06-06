@@ -1,7 +1,7 @@
+/* eslint-disable no-undef */
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
-// eslint-disable-next-line no-undef
 module.exports = {
   mode: "production",
   entry: {
@@ -74,6 +74,7 @@ module.exports = {
     ],
   },
   devServer: {
+    contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true,
   },
   plugins: [
