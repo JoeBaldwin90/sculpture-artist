@@ -1,24 +1,12 @@
 /* eslint-disable no-undef */
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
   mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js"),
-    hannah: path.resolve(__dirname, "src/images/hannah.png"),
-    head: path.resolve(__dirname, "src/images/head.png"),
-    clay: path.resolve(__dirname, "src/images/clay.jpg"),
-    arrow: path.resolve(__dirname, "src/images/arrow.svg"),
-    chest: path.resolve(__dirname, "src/images/chest.png"),
-    ant: path.resolve(__dirname, "src/images/ant.png"),
-    claudia: path.resolve(__dirname, "src/images/claudia.png"),
-    cback: path.resolve(__dirname, "src/images/ClaudiaBack.png"),
-    cfront: path.resolve(__dirname, "src/images/ClaudiaFront.png"),
-    forearm: path.resolve(__dirname, "src/images/forearm.png"),
-    hardwell: path.resolve(__dirname, "src/images/hardwell.png"),
-    jfront: path.resolve(__dirname, "src/images/JacksonFront.png"),
-    jside: path.resolve(__dirname, "src/images/JacksonSide.png"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -74,14 +62,16 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, "dist"),
     historyApiFallback: true,
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: "./public/index.html",
       filename: "./index.html",
       favicon: "./public/statue.ico",
+      redirect: "./public/_redirects",
     }),
   ],
   optimization: {
